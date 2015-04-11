@@ -2,7 +2,8 @@
 imageset: generates code for Xcode assets
 *****************************************
 
-Reads your ``.xcassets`` directory to 
+Reads your ``.xcassets`` directory and generates functions, categories, or constants.
+Supports both Swift and Objective-C, and allows custom templates.
 
 ============
 Installation
@@ -19,6 +20,7 @@ Usage
 Just run:
 
 .. code-block:: bash
+
     $ imageset --help
 
-For details.
+For details. The category/extension mode seems best to me.
