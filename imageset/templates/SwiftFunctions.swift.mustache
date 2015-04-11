@@ -1,0 +1,6 @@
+{{#images}}
+func {{#prefix}}{{prefix}}{{/prefix}}{{#function-prefix}}{{function-prefix}}{{/function-prefix}}{{name}} -> {{image-class}}{{#swift-optionals}}?{{/swift-optionals}}
+{
+    return {{image-class}}(named: "{{name}}"){{^swift-optionals}}!{{/swift-optionals}}
+}
+{{/images}}

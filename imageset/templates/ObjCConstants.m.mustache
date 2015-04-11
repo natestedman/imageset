@@ -1,0 +1,5 @@
+#import "{{filename-without-extension}}.h"
+
+{{#images}}
+NSString *const {{#prefix}}{{prefix}}{{/prefix}}{{#constant-prefix}}{{constant-prefix}}{{/constant-prefix}}{{name}} = @"{{name}}"
+{{/images}}

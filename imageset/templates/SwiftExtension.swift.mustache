@@ -1,0 +1,9 @@
+extension {{image-class}}
+{
+    {{#images}}
+    class func {{#prefix-lowercase}}{{prefix-lowercase}}_{{/prefix-lowercase}}{{selector-name}}() -> {{image-class}}{{#swift-optionals}}?{{/swift-optionals}}
+    {
+        return {{image-class}}(named: "{{name}}"){{^swift-optionals}}!{{/swift-optionals}}
+    }
+    {{/images}}
+}

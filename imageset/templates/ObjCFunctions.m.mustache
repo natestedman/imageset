@@ -1,0 +1,9 @@
+#import "{{filename-without-extension}}.h"
+
+{{#images}}
+{{image-class}}* {{#prefix}}{{prefix}}{{/prefix}}{{#function-prefix}}{{function-prefix}}{{/function-prefix}}{{name}}(void)
+{
+    return [{{image-class}} imageNamed:@"{{name}}"];
+}
+
+{{/images}}

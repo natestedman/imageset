@@ -1,0 +1,13 @@
+#import "{{filename-without-extension}}.h"
+
+@implementation {{image-class}} ({{class-name}})
+
+{{#images}}
++({{image-class}}*){{#prefix-lowercase}}{{prefix-lowercase}}_{{/prefix-lowercase}}{{selector-name}}
+{
+    return [{{image-class}} imageNamed:@"{{name}}"];
+}
+
+{{/images}}
+
+@end

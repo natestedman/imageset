@@ -1,0 +1,11 @@
+@interface {{image-class}} ({{class-name}})
+
+{{#images}}
+/**
+ * Returns the "{{name}}" image.
+ */
++({{image-class}}*){{#prefix-lowercase}}{{prefix-lowercase}}_{{/prefix-lowercase}}{{selector-name}};
+
+{{/images}}
+
+@end
