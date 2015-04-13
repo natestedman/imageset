@@ -117,8 +117,8 @@ def main():
     if results.generate_objc_constants:
         add_builtin("ObjCConstants.h.mustache", "{0}{1}Constants.h".format(none_to_empty(results.prefix), class_name))
         add_builtin("ObjCConstants.m.mustache", "{0}{1}Constants.m".format(none_to_empty(results.prefix), class_name))
-        
-    template_arguments = map(lambda arg: arg.split('='), results.template_argument)
+    
+    template_arguments = map(lambda arg: arg.split('='), results.template_argument) if results.template_argument else []
     template_arguments = filter(lambda arg: len(arg) == 2, template_arguments)
     
     generate(results.imageset_filename,
