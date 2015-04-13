@@ -16,7 +16,7 @@ import argparse
 import os
 import pystache
 
-version = "1.0"
+version = "1.1"
 
 def main():
     parser = argparse.ArgumentParser(description="Apply templates to files from Xcode imagesets",
